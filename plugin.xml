@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.adempiere.process.Export2Queue"
+         name="Export to ActiveMQ"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.adempiere.process.Export2Queue">
+      </process>
+   </extension>
+   <extension
+         id="org.adempiere.process.ImportQueue2AD"
+         name="Import from ActiveMQ"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.adempiere.process.ImportQueue2AD">
+      </process>
+   </extension>
+   <extension
+         id="org.compiere.process.ImportOrder"
+         name="Import POS Order"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.compiere.process.ImportOrder">
+      </process>
+   </extension>
+   <extension
+         id="com.ghintech.puntocom.process.ImportOrder"
+         name="com.ghintech.puntocom.process.ImportOrder"
+         point="org.adempiere.base.Process">
+      <process
+            class="com.ghintech.puntocom.process.ImportOrder"
+            priority="1">
+      </process>
+   </extension>
+   <extension
+         id="com.ghintech.puntocom.process.ImportLinesFromBankAccounts"
+         name="com.ghintech.puntocom.process.ImportLinesFromBankAccounts"
+         point="org.adempiere.base.Process">
+      <process
+            class="com.ghintech.puntocom.process.ImportLinesFromBankAccounts"
+            priority="1">
+      </process>
+   </extension>
+   <extension
+         id="com.ghintech.puntocom.process.POSProcessCloseCash"
+         name="com.ghintech.puntocom.process.POSProcessCloseCash"
+         point="org.adempiere.base.Process">
+      <process
+            class="com.ghintech.puntocom.process.POSProcessCloseCash">
+      </process>
+   </extension>
+   <extension
+         id="com.ghintech.puntocom.process.ImportCloseCash2AD"
+         name="com.ghintech.puntocom.process.ImportCloseCash2AD"
+         point="org.adempiere.base.Process">
+      <process
+            class="com.ghintech.puntocom.process.ImportCloseCash2AD">
+      </process>
+   </extension>
+   <extension
+         id="com.ghintech.puntocom.process.FillZreportSequence"
+         name="FillZreportSequence"
+         point="org.adempiere.base.Process">
+      <process
+            class="com.ghintech.puntocom.process.FillZreportSequence">
+      </process>
+   </extension>
+</plugin>
